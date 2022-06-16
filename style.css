@@ -1,35 +1,136 @@
-.container{display:grid;
-grid-template-rows: 1fr 4fr;
-grid-template-columns: 1fr 4fr;
-font-family:"Lucida Console"}
+.container {
+  display: grid;
+  grid-template-rows: 1fr 4fr;
+  grid-template-columns: 1fr 4fr;
+  font-family: "Lucida Console";
+  height: 100vh;
+}
 
-.dashboardContainer{grid-row:1/-1;
-grid-column:1/2;
-height:100vh;
-gap:5%;
-display:flex;
-flex-direction:column;
-background-color:#059669;
-color:white;
-font-weight:bold;
- text-align:start}
+.dashboardContainer {
+  grid-row: 1/-1;
+  grid-column: 1/2;
+
+  gap: 5%;
+  display: flex;
+  flex-direction: column;
+  background-color: #059669;
+  color: white;
+  font-weight: bold;
+  text-align: start
+}
+
+.dashItem {
+  display: flex;
+  align-items: center;
+}
+
+.dashboardHead {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  gap: 5%;
+  padding: 5%;
+  font-size: 24px;
+}
+
+.dashboardHomeOptions {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  gap: 5%;
+  padding: 10%;
+  font-size: 18px
+}
+
+.dashboardSettingsOptions {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  gap: 5%;
+  padding: 10%;
+  font-size: 18px
+}
 
 
+.headerContainer {
+  grid-row: 1/2;
+  grid-column: 2/-1;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 1fr 2fr;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
 
-.dashboardHead{display:grid;
-grid-template-columns:1fr 5fr; gap:5%; padding:5%; font-size:24px;}
+.notificationsBar {
+  display: flex;
+  gap: 5%;
+  align-items: center;
+  font-weight: bolder;
+  justify-content: center
+}
 
-.dashboardHomeOptions{display:grid;
-grid-template-columns:1fr 5fr; gap:5%; padding:10%}
+.profilePic img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  border: 1px solid #d1fae5
+}
 
-.dashboardSettingsOptions{display:grid;
-grid-template-columns:1fr 5fr; gap:5%; padding:10%}
+.profilePicBig img {
+  height: 100px;
+  width: 100px;
+  border-radius: 100px;
+  border: 1px solid #d1fae5
+}
 
-.dashItem{display:flex; align-items:center}
-.headerContainer{grid-row:1/2;
-grid-column:2/-1}
+.greeting {
+  display: flex;
+  gap: 5%;
+  align-items: center;
+  font-weight: bolder
+}
+
+.profileName {
+  font-weight: bold;
+  font-size: 18px
+}
+
+.profileNameBig {
+  font-weight: bold;
+  font-size: 24px
+}
+
+.searchArea {
+  display: flex;
+  gap: 2%;
+  align-items: center;
+}
+
+.searchbar {
+  width: 80%;
+  border-radius: 20px;
+  background-color: #d1fae5
+}
+
+.controlButtons button {
+  width: 30%;
+  height: 40%;
+  background-color: #059669;
+  border-radius: 20px;
+  color: white;
+  font-family: "Lucida Console";
+  font-weight: bolder
+}
+
+.controlButtons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center
+}
 
 
-.mainContentContainer{grid-row:2/-1;
-grid-column:2/-1;
-background-color:#d1fae5}
+.mainContentContainer {
+  grid-row: 2/-1;
+  grid-column: 2/-1;
+  background-color: #d1fae5
+}
